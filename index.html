@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/abba278396.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header id="title">
+      <h1>SPLI<br />TTER</h1>
+    </header>
+    <main class="container">
+      <div class="inputs">
+        <label for="amount">Bill</label>
+        <div class="input-icons">
+          <i class="fa-light fa-dollar-sign"></i>
+          <input type="text" name="amount" id="amount" placeholder="0" />
+        </div>
+        <label for="percentage">Select Tip %</label>
+        <div class="flex-percenteges">
+          <button value="5" class="percentage">5%</button>
+          <button value="10" class="percentage">10%</button>
+          <button value="15" class="percentage">15%</button>
+          <button value="25" class="percentage">25%</button>
+          <button value="50" class="percentage">50%</button>
+          <input type="text" placeholder="Custom" id="new-amount" />
+        </div>
+        <label for="people">Number of People</label>
+        <div class="input-icons">
+          <i class="fa-regular fa-user fa-xs"></i>
+          <input type="text" name="people" id="people" placeholder="0" />
+        </div>
+      </div>
+      <div class="inputsshow">
+        <div class="tip-amount">
+          <p class="amount">Tip Amount<span>/ person</span></p>
+          <h2 class="amount-total">
+            $ <span id="display-amount-percent">0.00</span>
+          </h2>
+        </div>
+
+        <div class="totalshow">
+          <p class="amount">Total<span>/ person</span></p>
+          <h2 class="amount-total">
+            $ <span id="display-amount-total">0.00</span>
+          </h2>
+        </div>
+        <button id="reset">RESET</button>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
